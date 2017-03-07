@@ -83,4 +83,4 @@ Tests
 
 ::
 
-    > nosetests -v --with-coverage
+    > nosetests -v --with-coverage --with-doctest
