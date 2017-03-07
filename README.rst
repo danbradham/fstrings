@@ -2,14 +2,14 @@
 f-strings...sorta
 =================
 
-Python 3.6 f-strings are pretty awesome. It's too bad you can't use them in 2.7 or 3.5. Well now you can...sorta. The `fstrings` module provides a function `f` that acts similar to f-strings. Pass a string with str.format tokens and `f` will return a string formatted using the available globals and locals. Like this::
+Python 3.6 f-strings are pretty awesome. It's too bad you can't use them in 2.7 or 3.5. Well now you can...sorta. The **fstrings** module provides a function *f* that acts similar to f-strings. Pass a string with str.format tokens and *f* will return a string formatted using the available globals and locals. Like this::
 
     >>> from fstrings import f
     >>> x = 'Hello, World...'
     >>> f('{x}')
     'Hello, World...'
 
-You can't evaluate arbitrary python code within the format tokens like you can in Python 3.6, but, some of that lost functionality is gained by allowing you to pass `args` and `kwargs` to `f`. For example, you can still use position arguments with `f`::
+You can't evaluate arbitrary python code within the format tokens like you can in Python 3.6, but, some of that lost functionality is gained by allowing you to pass *args* and *kwargs* to *f*. For example, you can still use positional arguments with *f*::
 
     >>> x = 'World...'
     >>> f('{} {x}', 'Hello')
@@ -22,7 +22,7 @@ Or you could override globals and locals by passing keyword arguments::
     >>> f('{x}, {y}', x='Goodbye')
     'Goodbye, World...'
 
-In addition to the `f` function, fstrings also provides some other nifty functionality.
+Or do both, it's your life. In addition to *f*, fstrings also provides some other nifty stuff.
 
 
 fdocstring Decorator
@@ -38,7 +38,7 @@ fdocstring Decorator
     >>> func.__doc__
     'Hello from ya docs'
 
-Right now you might be thinking, "Cool, `fdocstring` provides the same funcality as `f`, but, for doc strings." You are correct. You can even use `fdocstring` to format class doc strings:
+Right now you might be thinking, "Cool, *fdocstring* provides the same funcality as *f*, but, for doc strings." You are correct. You can even use *fdocstring* to format class doc strings:
 
 ::
 
@@ -59,7 +59,7 @@ Boom, boom is right. Methods are automagically formatted.
 
 printf?
 =======
-After implementing `f`, `printf` was too obvious not to implement.
+After implementing *f*, *printf* was too obvious not to implement.
 
 ::
 
@@ -68,7 +68,7 @@ After implementing `f`, `printf` was too obvious not to implement.
     >>> printf('{x}')
     PRINTFED
 
-`printf` and `fdocstring` accept `args` and `kwargs` for overriding globals and locals just like `f`.
+*printf* and *fdocstring* accept *args* and *kwargs* for overriding globals and locals just like *f*.
 
 Features and Differences
 ========================
@@ -79,7 +79,7 @@ Features and Differences
 
 Tests
 =====
-`fstrings` comes with a robust set of tests. `pip install nose` and run them if you like.
+**fstrings** comes with a robust set of tests. *pip install nose* and run them if you like.
 
 ::
 
