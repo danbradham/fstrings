@@ -3,10 +3,16 @@
 f-strings...sorta
 =================
 '''
+__all__ = ['f', 'fdocstring', 'printf']
+__author__ = 'Dan Bradham'
+__email__ = 'danielbradham@gmail.com'
+__license__ = 'MIT'
+__title__ = 'fstrings'
+__url__ = 'https://github.com/danbradham/fstrings'
+__version__ = '0.1.0'
 
 import sys
 from inspect import currentframe, getmro, isclass, isfunction
-__all__ = ['f', 'fdocstring', 'printf']
 
 
 def f(s, *args, **kwargs):
