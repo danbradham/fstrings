@@ -82,7 +82,6 @@ class Test_fdocstring(unittest.TestCase):
             def method(self):
                 '''{}/{}/{STRING}/{OBJ.NUM:0>3}'''
 
-        print obj.__doc__, obj.method.__doc__
         assert obj.__doc__ == expected
         assert obj.method.__doc__ == expected
 
