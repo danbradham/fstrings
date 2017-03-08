@@ -2,7 +2,7 @@
 f-strings...sorta
 =================
 
-Python 3.6 f-strings are pretty awesome. It's too bad you can't use them in 2.7 or 3.5. Well now you can...sorta. The **fstrings** module provides a function *f* that acts similar to f-strings. Pass a string with str.format tokens and *f* will return a string formatted using the available globals and locals. Like this::
+Python 3.6 f-strings are pretty awesome. It's too bad you can't use them in 2.7 or 3.5. The **fstrings** module provides a function *f* that acts similar to f-strings. Pass a string with str.format tokens and *f* will return a string formatted using the available globals and locals. Like this::
 
     >>> from fstrings import f
     >>> x = 'Hello, World...'
@@ -38,7 +38,7 @@ fdocstring Decorator
     >>> func.__doc__
     'Hello from ya docs'
 
-Right now you might be thinking, "Cool, *fdocstring* provides the same funcality as *f*, but, for doc strings." You are correct. You can even use *fdocstring* to format class doc strings:
+Right now you might be thinking, "Cool, *fdocstring* provides the same funcality as *f*, but, for doc strings." You would be correct. You can even use *fdocstring* to format class doc strings:
 
 ::
 
@@ -54,7 +54,7 @@ Right now you might be thinking, "Cool, *fdocstring* provides the same funcality
     >>> Obj.method.__doc__
     'BOOM!'
 
-Boom, boom is right. Methods are automagically formatted.
+"Boom boom" is right. Methods are auto formatted too.
 
 
 printf?
