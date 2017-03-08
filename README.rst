@@ -84,3 +84,7 @@ Tests
 ::
 
     > nosetests -v --with-coverage --with-doctest
+
+Similar Projects
+================
+If you're looking for an implementation truer to Python 3.6 f-strings check out `fmt <https://github.com/damnever/fmt>`_.
