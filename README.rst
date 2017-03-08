@@ -2,7 +2,7 @@
 f-strings...sorta
 =================
 
-Python 3.6 f-strings are pretty awesome. It's too bad you can't use them in 2.7 or 3.5. The **fstrings** module provides a function *f* that acts similar to f-strings. Pass a string with str.format tokens and *f* will return a string formatted using the available globals and locals. Like this::
+Python 3.6 f-strings are pretty awesome. It's too bad you can't use them in 2.7 or 3.5. With **fstrings** you can...sorta. The **fstrings** module provides a function *f* that acts similar to f-strings. Pass a string with str.format tokens and *f* will return a string formatted using the available globals and locals. Like this::
 
     >>> from fstrings import f
     >>> x = 'Hello, World...'
