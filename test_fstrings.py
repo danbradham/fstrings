@@ -1,9 +1,9 @@
-try:
-    from StringIO import StringIO
-except:
-    from io import StringIO
 import unittest
 import fstrings
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
 from fstrings import f, fdocstring, printf
 
 
