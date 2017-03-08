@@ -1,4 +1,7 @@
-import StringIO
+try:
+    from StringIO import StringIO
+except:
+    from io import StringIO
 import unittest
 import fstrings
 from fstrings import f, fdocstring, printf
@@ -151,7 +154,7 @@ class Test_fdocstring(unittest.TestCase):
 class Test_printf(unittest.TestCase):
 
     def setUp(self):
-        self.stream = StringIO.StringIO()
+        self.stream = StringIO()
 
     def tearDown(self):
         self.stream.close()
