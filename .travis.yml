@@ -7,5 +7,5 @@ python:
   - "3.5"
   - "3.6"
 install:
-  - "pip install coverage"
+  - if [[ $TRAVIS_PYTHON_VERSION == 3.2 ]]; then pip install coverage==3.7.1; else pip install coverage; fi
 script: nosetests -v --with-coverage --with-doctest --doctest-extension rst
