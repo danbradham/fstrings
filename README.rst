@@ -14,7 +14,7 @@ Python 3.6 f-strings are pretty awesome. It's too bad you can't use them in 2.7 
 You can't evaluate arbitrary python code within the format tokens like you can in Python 3.6, but, some of that lost functionality is gained by allowing you to pass *args* and *kwargs* to *f*. For example, you can still use positional arguments with *f*::
 
     >>> x = 'World...'
-    >>> f('{} {x}', 'Hello')
+    >>> f('{} {x}', 'Hello,')
     'Hello, World...'
 
 Or you could override globals and locals by passing keyword arguments::
@@ -85,7 +85,7 @@ Tests
 
 ::
 
-    > nosetests -v --with-coverage --with-doctest
+    > nosetests -v --with-coverage --with-doctest --doctest-extension rst
 
 Similar Projects
 ================

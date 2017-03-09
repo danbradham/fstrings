@@ -6,5 +6,4 @@ python:
   - "3.4"
   - "3.5"
   - "3.6"
-script: nosetests -v --with-coverage --with-doctest
-
+script: nosetests -v --with-coverage --with-doctest --doctest-extension rst
