@@ -1,6 +1,19 @@
 from setuptools import setup
 import fstrings
 
+
+if sys.argv[-1] == 'cheeseit!':
+    check_call('nosetests -v')
+    check_call('python setup.py sdist bdist_wheel')
+    check_call('twine upload dist/*')
+    shutil.rmtree('dist')
+    sys.exit()
+elif sys.argv[-1] == 'testit!':
+    check_call('nosetests -v')
+    check_call('python setup.py sdist bdist_wheel upload -r pypitest')
+    sys.exit()
+
+
 with open('README.rst', 'r') as f:
     long_description = f.read()
 
