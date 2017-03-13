@@ -77,7 +77,7 @@ Features and Differences
 
  - Uses str.format instead of evaluating python code in {}
  - Allows overriding globals and locals by passing in \*args and \*\*kwargs
- - Supports python 2.7 to python 3.5
+ - Supports python 2.7 to python 3.6
 
 Tests
 =====
