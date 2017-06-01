@@ -1,4 +1,6 @@
 from setuptools import setup
+from subprocess import check_call
+import shutil
 import fstrings
 
 
